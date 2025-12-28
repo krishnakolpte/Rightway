@@ -1,0 +1,15 @@
+# User-agent: * means these rules apply to all search engines (Google, Bing, etc.)
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /temp/
+
+# Specifically block some common AI scrapers to save your bandwidth
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Tell search engines where to find your sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
