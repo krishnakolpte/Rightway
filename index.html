@@ -72,6 +72,8 @@
 		<link rel="manifest" href="./asetts/favicon_io/site.webmanifest" />
 
 		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+		<link rel="stylesheet" href="style.css" />
 		<script>
 			tailwind.config = {
 				darkMode: "class",
@@ -207,46 +209,46 @@
 		<section
 			class="relative bg-background-light pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden"
 		>
+			<div class="absolute inset-0 z-0"></div>
+
 			<div
-				class="absolute inset-0 z-0 bg-cover bg-top bg-no-repeat"
-				style="
-					background-image: url('./asetts/bg.webp');
-					mask-image: linear-gradient(
-						to bottom,
-						black 20%,
-						transparent 90%
-					);
-					-webkit-mask-image: linear-gradient(
-						to bottom,
-						black 20%,
-						transparent 90%
-					);
-				"
-			></div>
+				class="absolute -top-10 -right-10 lg:-top-20 lg:-right-20 z-0 pointer-events-none transform rotate-12 transition-all duration-1000 animate-float"
+			>
+				<img
+					class="w-48 sm:w-64 lg:w-[550px] h-auto object-contain filter drop-shadow-2xl"
+					src="./asetts/bg.png"
+					alt="gold coins background"
+				/>
+			</div>
 
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div class="space-y-8 text-center lg:text-left">
 						<div
-							class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-primary text-xs font-bold uppercase tracking-wider"
+							class="flex flex-wrap gap-2 justify-center lg:justify-start"
 						>
-							<span class="material-symbols-outlined text-sm"
-								>verified_user</span
+							<div
+								class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-primary text-xs font-bold uppercase tracking-wider"
 							>
-							<span data-i18n="hero-badge-rbi"
-								>RBI Compliant & Trusted</span
+								<span class="material-symbols-outlined text-sm"
+									>verified_user</span
+								>
+								<span data-i18n="hero-badge-rbi"
+									>RBI Compliant & Trusted</span
+								>
+							</div>
+							<div
+								class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-accent text-xs font-bold uppercase tracking-wider"
 							>
+								<span class="material-symbols-outlined text-sm"
+									>verified_user</span
+								>
+								<span data-i18n="hero-badge-brand"
+									>Rightway Gold & Silver Loans</span
+								>
+							</div>
 						</div>
-						<div
-							class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-accent text-xs font-bold uppercase tracking-wider"
-						>
-							<span class="material-symbols-outlined text-sm"
-								>verified_user</span
-							>
-							<span data-i18n="hero-badge-brand"
-								>Rightway Gold & Silver Loans</span
-							>
-						</div>
+
 						<h1
 							class="text-4xl lg:text-6xl font-black leading-[1.1] tracking-tight text-text-dark"
 						>
@@ -260,16 +262,18 @@
 							>
 							<span
 								class="block text-2xl lg:text-3xl mt-4 font-bold text-gray-600"
-								><span data-i18n="hero-subtitle-text"
+							>
+								<span data-i18n="hero-subtitle-text"
 									>Interest at just</span
 								>
 								<span
 									class="text-accent underline decoration-accent/30 decoration-4 underline-offset-4"
 									data-i18n="hero-rate"
 									>0.70 Paise.</span
-								></span
-							>
+								>
+							</span>
 						</h1>
+
 						<p
 							class="text-lg text-text-light font-medium max-w-xl mx-auto lg:mx-0"
 						>
@@ -282,6 +286,7 @@
 								>₹0.70 to ₹0.90</strong
 							>.
 						</p>
+
 						<div
 							class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
 						>
@@ -314,6 +319,7 @@
 							</a>
 						</div>
 					</div>
+
 					<div class="relative">
 						<div
 							class="absolute -inset-4 bg-gradient-to-tr from-blue-100 to-transparent rounded-full blur-3xl opacity-70"
@@ -323,40 +329,36 @@
 						>
 							<div
 								class="w-full h-full bg-cover bg-center"
-								data-alt="Close up of traditional Indian gold jewelry necklaces and bangles"
 								style="
 									background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1-mgQXg0XUkmEqMvOnysOynPgooiUiku19a5npZZmfANPY7f-u-D41LzoT99NH9tw903quM5kzDJEipcA9amPBOc_rSrsBRaZzUI5dllbTDosiIBrB9a49zro8ZLKIyR6hFG7o9R_iPAC6cpkrh5i56mFqTXmWvJq1F5-0kzmniW_jmtEDCuv9To5fPJm66P5r7cS3lPqEJshRxPkFaVca2RxUC11V05DbeiuC5a8NAH_Xdp_zIM91cyWkgntWRW5KNUwLTjoxXKH');
 								"
 							></div>
 							<div
-								class="absolute bottom-6 left-6 right-6 bg-white-100 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-gray-100 flex items-center justify-between"
+								class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-gray-100"
 							>
-								<div class="flex items-center gap-4 pt-2">
+								<div class="flex items-center gap-4">
 									<div class="flex -space-x-2">
 										<div
-											class="w-8 h-8 rounded-full border-2 border-white dark:border-[#101922] bg-gray-200 bg-cover bg-center"
-											data-alt="Portrait of a smiling customer"
+											class="w-8 h-8 rounded-full border-2 border-white bg-gray-200 bg-cover bg-center"
 											style="
 												background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbkI2g4I08y_O7Je1Vuig0AJidLXnn1SM0vzvrR_ViBVsaoWb-s40zJa89Z7rrYY3751WkyvQABx6dW19_Q9rnnQ-5nOi-fF2lJ3D42j9vEpilBCbK0gw_xmH__T4r4d7QrViDIMfbnn4oJDwJimjwuSkoE7FFP4pWUcNomQuiuwqlSsQQBbpyZZEBtV28SeUA_B0dgXDZ4ESiqyEFAo_U7BQRsXS0LP_ptJ5BbPb3j7HmFMs_oIZNmOJ5OefOWxUl-Mvo551c60g9');
 											"
 										></div>
 										<div
-											class="w-8 h-8 rounded-full border-2 border-white dark:border-[#101922] bg-gray-200 bg-cover bg-center"
-											data-alt="Portrait of a male customer"
+											class="w-8 h-8 rounded-full border-2 border-white bg-gray-200 bg-cover bg-center"
 											style="
 												background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwiEEeCw93P-82HDqxFtA9gO9erBPk02XlUS4KKehEr5mtBeuGu-GTGo8I0Dt8n-_y4cN-GD9gTCNbRpQHjjjObmlNC5emsD5X-LvUlIdB9xkK2QUFV4v9hD-Y4GGByo5A1oBNX-cbNX2hiYcD7vfA1LhMdtNh0kf6vxRn6b66_JCgFrdtAamuOCj8gEgFGmExYAUfATHZxOhoSLm878CeL0GAuOc2blbgSjRPWRfJUnoGdZKx-GzH2gJ7-i_tcydIwYr0zqjBl-89');
 											"
 										></div>
 										<div
-											class="w-8 h-8 rounded-full border-2 border-white dark:border-[#101922] bg-gray-200 bg-cover bg-center"
-											data-alt="Portrait of a happy client"
+											class="w-8 h-8 rounded-full border-2 border-white bg-gray-200 bg-cover bg-center"
 											style="
 												background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTHMXaLRUKI8HkGnfRcDr3wWHg9qkhuH6AmcSjkKmSYfG6nSEiPqZkC9X48wPkC5YxycIeFw_Nmo27XfLRi-JtWILY5MWkcfAY7GTp7-omRyATSdgU6taEyYXSpB-QvJi6-o0q2shmPDCd-CwB315s2pRFjk9nlWeOhm8MHG4arj0eil5zf35RLdXyHeo9MQsahhijKETJ6Go5VMp2644FvEtpbrHyRau-o5d_qxIUj4PazZuJGXaTCVBa5Rx62nu36_FeH6c8wZEI');
 											"
 										></div>
 									</div>
 									<span
-										class="text-sm font-medium text-[#64748b] dark:text-slate-400"
+										class="text-sm font-bold text-text-dark"
 										data-i18n="hero-trust"
 										>Trusted by 10,000+ customers</span
 									>
@@ -367,6 +369,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- stats section -->
 		<section class="border-y border-[#e7e8f3] bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -427,6 +430,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- services -->
 		<section class="py-20 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -582,6 +586,299 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="py-16 lg:py-24 bg-white relative overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+				<div
+					class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 mb-20"
+				>
+					<div
+						class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 text-center group hover:bg-primary transition-all duration-300"
+					>
+						<h3
+							class="text-3xl lg:text-4xl font-black text-primary group-hover:text-white mb-1"
+						>
+							300+
+						</h3>
+						<p
+							class="text-gray-600 group-hover:text-blue-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
+							data-i18n="stats-happy-cx"
+						>
+							Happy Customers
+						</p>
+					</div>
+
+					<div
+						class="bg-orange-50/50 p-6 rounded-2xl border border-orange-100 text-center group hover:bg-accent transition-all duration-300"
+					>
+						<h3
+							class="text-3xl lg:text-4xl font-black text-accent group-hover:text-white mb-1"
+						>
+							25+
+						</h3>
+						<p
+							class="text-gray-600 group-hover:text-orange-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
+							data-i18n="stats-group-loans"
+						>
+							Total Group Loans
+						</p>
+					</div>
+
+					<div
+						class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 text-center group hover:bg-primary transition-all duration-300"
+					>
+						<h3
+							class="text-3xl lg:text-4xl font-black text-primary group-hover:text-white mb-1"
+						>
+							20+
+						</h3>
+						<p
+							class="text-gray-600 group-hover:text-blue-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
+							data-i18n="stats-fd-clients"
+						>
+							Happy FD Clients
+						</p>
+					</div>
+
+					<div
+						class="bg-orange-50/50 p-6 rounded-2xl border border-orange-100 text-center group hover:bg-accent transition-all duration-300"
+					>
+						<h3
+							class="text-3xl lg:text-4xl font-black text-accent group-hover:text-white mb-1"
+						>
+							80+
+						</h3>
+						<p
+							class="text-gray-600 group-hover:text-orange-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
+							data-i18n="stats-pigme-clients"
+						>
+							Happy Pigme Clients
+						</p>
+					</div>
+				</div>
+
+				<div class="text-center mb-12">
+					<h2
+						class="text-3xl lg:text-4xl font-black text-text-dark tracking-tight"
+					>
+						<span data-i18n="services-title-main"
+							>Financial Solutions For</span
+						>
+						<span
+							class="text-primary"
+							data-i18n="services-title-highlight"
+							>Every Need</span
+						>
+					</h2>
+					<div
+						class="w-20 h-1.5 bg-accent mx-auto mt-4 rounded-full"
+					></div>
+				</div>
+
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+				>
+					<div
+						class="p-8 rounded-3xl border-2 border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group"
+					>
+						<span
+							class="material-symbols-outlined text-4xl text-primary mb-4"
+							>account_balance_wallet</span
+						>
+						<h4
+							class="text-xl font-bold text-text-dark mb-2"
+							data-i18n="service-savings-name"
+						>
+							Savings Accounts
+						</h4>
+						<p
+							class="text-gray-500 text-sm leading-relaxed mb-4"
+							data-i18n="service-savings-desc"
+						>
+							Secure your hard-earned money with high-interest
+							savings plans tailored for your future.
+						</p>
+						<div
+							class="flex items-center text-primary font-bold text-sm"
+						>
+							<span data-i18n="service-view-details"
+								>View Details</span
+							>
+							<span
+								class="material-symbols-outlined text-sm ml-1 group-hover:ml-2 transition-all"
+								>arrow_forward</span
+							>
+						</div>
+					</div>
+
+					<div
+						class="p-8 rounded-3xl border-2 border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group"
+					>
+						<span
+							class="material-symbols-outlined text-4xl text-primary mb-4"
+							>lock</span
+						>
+						<h4
+							class="text-xl font-bold text-text-dark mb-2"
+							data-i18n="service-fd-name"
+						>
+							Fixed Deposit (FD)
+						</h4>
+						<p
+							class="text-gray-500 text-sm leading-relaxed mb-4"
+							data-i18n="service-fd-desc"
+						>
+							Get guaranteed returns on your investment with our
+							highly competitive FD interest rates.
+						</p>
+						<div
+							class="flex items-center text-primary font-bold text-sm"
+						>
+							<span data-i18n="service-view-details"
+								>View Details</span
+							>
+							<span
+								class="material-symbols-outlined text-sm ml-1 group-hover:ml-2 transition-all"
+								>arrow_forward</span
+							>
+						</div>
+					</div>
+
+					<div
+						class="p-8 rounded-3xl border-2 border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group"
+					>
+						<span
+							class="material-symbols-outlined text-4xl text-primary mb-4"
+							>event_repeat</span
+						>
+						<h4
+							class="text-xl font-bold text-text-dark mb-2"
+							data-i18n="service-rd-name"
+						>
+							Recurring Deposit (RD)
+						</h4>
+						<p
+							class="text-gray-500 text-sm leading-relaxed mb-4"
+							data-i18n="service-rd-desc"
+						>
+							Build your wealth systematically by investing small
+							amounts every month with ease.
+						</p>
+						<div
+							class="flex items-center text-primary font-bold text-sm"
+						>
+							<span data-i18n="service-view-details"
+								>View Details</span
+							>
+							<span
+								class="material-symbols-outlined text-sm ml-1 group-hover:ml-2 transition-all"
+								>arrow_forward</span
+							>
+						</div>
+					</div>
+
+					<div
+						class="p-8 rounded-3xl border-2 border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group"
+					>
+						<span
+							class="material-symbols-outlined text-4xl text-accent mb-4"
+							>savings</span
+						>
+						<h4
+							class="text-xl font-bold text-text-dark mb-2"
+							data-i18n="service-pigmy-name"
+						>
+							Pigmy Deposit
+						</h4>
+						<p
+							class="text-gray-500 text-sm leading-relaxed mb-4"
+							data-i18n="service-pigmy-desc"
+						>
+							Doorstep collection service for small daily savings
+							to help you grow your business funds.
+						</p>
+						<div
+							class="flex items-center text-accent font-bold text-sm"
+						>
+							<span data-i18n="service-view-details"
+								>View Details</span
+							>
+							<span
+								class="material-symbols-outlined text-sm ml-1 group-hover:ml-2 transition-all"
+								>arrow_forward</span
+							>
+						</div>
+					</div>
+
+					<div
+						class="p-8 rounded-3xl border-2 border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group"
+					>
+						<span
+							class="material-symbols-outlined text-4xl text-accent mb-4"
+							>payments</span
+						>
+						<h4
+							class="text-xl font-bold text-text-dark mb-2"
+							data-i18n="service-loans-name"
+						>
+							All Loans
+						</h4>
+						<p
+							class="text-gray-500 text-sm leading-relaxed mb-4"
+							data-i18n="service-loans-desc"
+						>
+							From Personal to Business, we provide instant loan
+							approvals with minimal documentation.
+						</p>
+						<div
+							class="flex items-center text-accent font-bold text-sm"
+						>
+							<span data-i18n="service-view-details"
+								>View Details</span
+							>
+							<span
+								class="material-symbols-outlined text-sm ml-1 group-hover:ml-2 transition-all"
+								>arrow_forward</span
+							>
+						</div>
+					</div>
+
+					<div
+						class="p-8 rounded-3xl border-2 border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group"
+					>
+						<span
+							class="material-symbols-outlined text-4xl text-accent mb-4"
+							>verified_user</span
+						>
+						<h4
+							class="text-xl font-bold text-text-dark mb-2"
+							data-i18n="service-insurance-name"
+						>
+							Insurance Policies
+						</h4>
+						<p
+							class="text-gray-500 text-sm leading-relaxed mb-4"
+							data-i18n="service-insurance-desc"
+						>
+							Protect your family and assets with our
+							comprehensive insurance coverage plans.
+						</p>
+						<div
+							class="flex items-center text-accent font-bold text-sm"
+						>
+							<span data-i18n="service-view-details"
+								>View Details</span
+							>
+							<span
+								class="material-symbols-outlined text-sm ml-1 group-hover:ml-2 transition-all"
+								>arrow_forward</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Info cards -->
 		<section class="py-12 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -727,44 +1024,13 @@
 					</div>
 
 					<div class="w-full lg:w-3/4">
-						<div class="columns-2 gap-6 space-y-6">
+						<div class="columns-1 gap-6 space-y-6">
 							<div
 								class="break-inside-avoid group relative rounded-3xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-transform duration-500"
 							>
 								<img
 									src="./asetts/offer1.webp"
 									alt="Offer 1"
-									class="w-full h-auto object-cover"
-								/>
-								<div
-									class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-								></div>
-								<div
-									class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-								></div>
-							</div>
-
-							<div
-								class="break-inside-avoid group relative rounded-3xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-transform duration-500"
-							>
-								<img
-									src="./asetts/offer2.webp"
-									alt="Offer 2"
-									class="w-full h-auto object-cover"
-								/>
-								<div
-									class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-								></div>
-								<div
-									class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-								></div>
-							</div>
-							<div
-								class="break-inside-avoid group relative rounded-3xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-transform duration-500"
-							>
-								<img
-									src="./asetts/offer4.webp"
-									alt="Offer 2"
 									class="w-full h-auto object-cover"
 								/>
 								<div
@@ -2618,7 +2884,7 @@
 				>
 					<div class="text-xs text-gray-500 text-center md:text-left">
 						<p data-i18n="footer-copyright">
-							© 2025 Rightway Pe Pvt Ltd. All rights reserved.
+							© 2025 Rightway Pe. All rights reserved.
 						</p>
 						<p class="opacity-70 mt-1" data-i18n="footer-notice">
 							Gold release available 10 AM - 2 PM (1-2 days prior

@@ -209,7 +209,7 @@ const translations = {
 		"policy-fair": "Fair Practices Code",
 		"policy-grievance": "Grievance Redressal",
 		"footer-contact-title": "Contact Info",
-		"footer-copyright": "© 2025 Rightway Pe Pvt Ltd. All rights reserved.",
+		"footer-copyright": "© 2025 Rightway Pe. All rights reserved.",
 		"footer-notice":
 			"Gold release available 10 AM - 2 PM (1-2 days prior notice required).",
 		"address-val":
@@ -245,6 +245,32 @@ const translations = {
 			"Discover our curated collection of gold loan benefits, festive rewards, and digital-first financial solutions designed for you.",
 		"hero-cta-main": "Claim Offer",
 		"hero-cta-sec": "Learn More",
+
+		"stats-happy-cx": "Happy Customers",
+		"stats-group-loans": "Total Group Loans",
+		"stats-fd-clients": "Happy FD Clients",
+		"stats-pigme-clients": "Happy Pigme Clients",
+		"services-title-main": "Financial Solutions For",
+		"services-title-highlight": "Every Need",
+		"service-savings-name": "Savings Accounts",
+		"service-savings-desc":
+			"Secure your hard-earned money with high-interest savings plans tailored for your future.",
+		"service-fd-name": "Fixed Deposit (FD)",
+		"service-fd-desc":
+			"Get guaranteed returns on your investment with our highly competitive FD interest rates.",
+		"service-rd-name": "Recurring Deposit (RD)",
+		"service-rd-desc":
+			"Build your wealth systematically by investing small amounts every month with ease.",
+		"service-pigmy-name": "Pigmy Deposit",
+		"service-pigmy-desc":
+			"Doorstep collection service for small daily savings to help you grow your business funds.",
+		"service-loans-name": "All Loans",
+		"service-loans-desc":
+			"From Personal to Business, we provide instant loan approvals with minimal documentation.",
+		"service-insurance-name": "Insurance Policies",
+		"service-insurance-desc":
+			"Protect your family and assets with our comprehensive insurance coverage plans.",
+		"service-view-details": "View Details",
 	},
 
 	kn: {
@@ -457,7 +483,7 @@ const translations = {
 		"policy-grievance": "ಕುಂದುಕೊರತೆ ನಿವಾರಣೆ",
 		"footer-contact-title": "ಸಂಪರ್ಕ ಮಾಹಿತಿ",
 		"footer-copyright":
-			"© 2025 ರೈಟ್ವೇ ಪೇ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್. ಸರ್ವ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
+			"© 2025 ರೈಟ್ವೇ ಪೇ. ಸರ್ವ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
 		"footer-notice":
 			"ಚಿನ್ನದ ಬಿಡುಗಡೆ ಬೆಳಿಗ್ಗೆ 10 ರಿಂದ ಮಧ್ಯಾಹ್ನ 2 ರವರೆಗೆ ಲಭ್ಯವಿದೆ (1-2 ದಿನಗಳ ಮುಂಚಿತವಾಗಿ ಸೂಚನೆ ಅಗತ್ಯವಿದೆ).",
 		"address-val":
@@ -493,6 +519,32 @@ const translations = {
 			"ನಿಮಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ಚಿನ್ನದ ಸಾಲದ ಪ್ರಯೋಜನಗಳು, ಹಬ್ಬದ ಬಹುಮಾನಗಳು ಮತ್ತು ಡಿಜಿಟಲ್ ಹಣಕಾಸು ಪರಿಹಾರಗಳ ಸಂಗ್ರಹವನ್ನು ಅನ್ವೇಷಿಸಿ.",
 		"hero-cta-main": "ಕೊಡುಗೆಯನ್ನು ಪಡೆಯಿರಿ",
 		"hero-cta-sec": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ",
+
+		"stats-happy-cx": "ಸಂತೋಷದ ಗ್ರಾಹಕರು",
+		"stats-group-loans": "ಒಟ್ಟು ಗ್ರೂಪ್ ಲೋನ್‌ಗಳು",
+		"stats-fd-clients": "ಸಂತೋಷದ FD ಗ್ರಾಹಕರು",
+		"stats-pigme-clients": "ಸಂತೋಷದ ಪಿಗ್ಮಿ ಗ್ರಾಹಕರು",
+		"services-title-main": "ಪ್ರತಿಯೊಂದು ಅವಶ್ಯಕತೆಗೂ",
+		"services-title-highlight": "ಹಣಕಾಸಿನ ಪರಿಹಾರಗಳು",
+		"service-savings-name": "ಉಳಿತಾಯ ಖಾತೆಗಳು",
+		"service-savings-desc":
+			"ನಿಮ್ಮ ಭವಿಷ್ಯಕ್ಕಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ಅಧಿಕ ಬಡ್ಡಿ ಉಳಿತಾಯ ಯೋಜನೆಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಕಷ್ಟಪಟ್ಟು ಸಂಪಾದಿಸಿದ ಹಣವನ್ನು ಸುರಕ್ಷಿತಗೊಳಿಸಿ.",
+		"service-fd-name": "ಸ್ಥಿರ ಠೇವಣಿ (FD)",
+		"service-fd-desc":
+			"ನಮ್ಮ ಅತ್ಯಂತ ಸ್ಪರ್ಧಾತ್ಮಕ FD ಬಡ್ಡಿ ದರಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಹೂಡಿಕೆಯ ಮೇಲೆ ಖಾತರಿಯ ಆದಾಯವನ್ನು ಪಡೆಯಿರಿ.",
+		"service-rd-name": "ಮರುಕಳಿಸುವ ಠೇವಣಿ (RD)",
+		"service-rd-desc":
+			"ಪ್ರತಿ ತಿಂಗಳು ಸಣ್ಣ ಮೊತ್ತವನ್ನು ಹೂಡಿಕೆ ಮಾಡುವ ಮೂಲಕ ವ್ಯವಸ್ಥಿತವಾಗಿ ನಿಮ್ಮ ಸಂಪತ್ತನ್ನು ಬೆಳೆಸಿಕೊಳ್ಳಿ.",
+		"service-pigmy-name": "ಪಿಗ್ಮಿ ಠೇವಣಿ",
+		"service-pigmy-desc":
+			"ನಿಮ್ಮ ವ್ಯವಹಾರದ ನಿಧಿಯನ್ನು ಬೆಳೆಸಲು ಸಣ್ಣ ದೈನಂದಿನ ಉಳಿತಾಯಕ್ಕಾಗಿ ಮನೆಬಾಗಿಲ ಸಂಗ್ರಹ ಸೇವೆ.",
+		"service-loans-name": "ಎಲ್ಲಾ ರೀತಿಯ ಸಾಲಗಳು",
+		"service-loans-desc":
+			"ವೈಯಕ್ತಿಕದಿಂದ ವ್ಯವಹಾರದವರೆಗೆ, ನಾವು ಕನಿಷ್ಠ ದಾಖಲೆಗಳೊಂದಿಗೆ ತಕ್ಷಣದ ಸಾಲದ ಅನುಮೋದನೆಯನ್ನು ನೀಡುತ್ತೇವೆ.",
+		"service-insurance-name": "ವಿಮಾ ಪಾಲಿಸಿಗಳು",
+		"service-insurance-desc":
+			"ನಮ್ಮ ಸಮಗ್ರ ವಿಮಾ ಕವರೇಜ್ ಯೋಜನೆಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಕುಟುಂಬ ಮತ್ತು ಆಸ್ತಿಗಳನ್ನು ರಕ್ಷಿಸಿ.",
+		"service-view-details": "ವಿವರಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
 	},
 };
 
