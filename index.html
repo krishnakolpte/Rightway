@@ -360,7 +360,7 @@
 									<span
 										class="text-sm font-bold text-text-dark"
 										data-i18n="hero-trust"
-										>Trusted by 10,000+ customers</span
+										>Trusted by 1000+ customers</span
 									>
 								</div>
 							</div>
@@ -388,7 +388,11 @@
 					<div
 						class="text-center space-y-2 border-r last:border-0 border-[#e7e8f3] md:border-r-0 lg:border-r"
 					>
-						<p class="text-4xl font-black text-text-dark">10k+</p>
+						<p class="text-4xl font-black text-text-dark">
+							<strong class="stat-number" data-target="10"
+								>0</strong
+							>k+
+						</p>
 						<p
 							class="text-sm font-medium text-text-light uppercase tracking-wide"
 							data-i18n="stats-customers"
@@ -397,9 +401,14 @@
 						</p>
 					</div>
 					<div
-						class="text-center space-y-2 border-r last:border-0 border-[#e7e8f3] md:border-r-0 lg:border-r"
+						class="text-center space-y-2 border-r last:border-0 border-[#e7e8f3] md:border-r-0 lg:border-r transition-all duration-300"
 					>
-						<p class="text-4xl font-black text-text-dark">₹1Cr+</p>
+						<p class="text-4xl font-black text-text-dark">
+							₹
+							<strong class="stat-number" data-target="1"
+								>0</strong
+							>Cr+
+						</p>
 						<p
 							class="text-sm font-medium text-text-light uppercase tracking-wide"
 							data-i18n="stats-funded"
@@ -596,9 +605,10 @@
 						class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 text-center group hover:bg-primary transition-all duration-300"
 					>
 						<h3
-							class="text-3xl lg:text-4xl font-black text-primary group-hover:text-white mb-1"
+							class="stat-number text-3xl lg:text-4xl font-black text-primary group-hover:text-white mb-1"
+							data-target="300"
 						>
-							300+
+							0+
 						</h3>
 						<p
 							class="text-gray-600 group-hover:text-blue-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
@@ -612,9 +622,10 @@
 						class="bg-orange-50/50 p-6 rounded-2xl border border-orange-100 text-center group hover:bg-accent transition-all duration-300"
 					>
 						<h3
-							class="text-3xl lg:text-4xl font-black text-accent group-hover:text-white mb-1"
+							class="stat-number text-3xl lg:text-4xl font-black text-accent group-hover:text-white mb-1"
+							data-target="25"
 						>
-							25+
+							0+
 						</h3>
 						<p
 							class="text-gray-600 group-hover:text-orange-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
@@ -628,9 +639,10 @@
 						class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 text-center group hover:bg-primary transition-all duration-300"
 					>
 						<h3
-							class="text-3xl lg:text-4xl font-black text-primary group-hover:text-white mb-1"
+							class="stat-number text-3xl lg:text-4xl font-black text-primary group-hover:text-white mb-1"
+							data-target="20"
 						>
-							20+
+							0+
 						</h3>
 						<p
 							class="text-gray-600 group-hover:text-blue-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
@@ -644,9 +656,10 @@
 						class="bg-orange-50/50 p-6 rounded-2xl border border-orange-100 text-center group hover:bg-accent transition-all duration-300"
 					>
 						<h3
-							class="text-3xl lg:text-4xl font-black text-accent group-hover:text-white mb-1"
+							class="stat-number text-3xl lg:text-4xl font-black text-accent group-hover:text-white mb-1"
+							data-target="80"
 						>
-							80+
+							0+
 						</h3>
 						<p
 							class="text-gray-600 group-hover:text-orange-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
@@ -2103,16 +2116,43 @@
 		</section>
 
 		<!-- testimonials -->
-		<section class="py-20 bg-white">
+		<section class="py-20 bg-white overflow-hidden">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h2
-					class="text-3xl font-black text-center text-text-dark mb-12"
-					data-i18n="testi-main-title"
+				<div class="flex justify-between items-end mb-12">
+					<h2
+						class="text-3xl font-black text-text-dark"
+						data-i18n="testi-main-title"
+					>
+						Trusted by Families
+					</h2>
+					<div class="flex gap-2">
+						<button
+							id="prevBtn"
+							class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors"
+						>
+							<span class="material-symbols-outlined"
+								>chevron_left</span
+							>
+						</button>
+						<button
+							id="nextBtn"
+							class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors"
+						>
+							<span class="material-symbols-outlined"
+								>chevron_right</span
+							>
+						</button>
+					</div>
+				</div>
+
+				<div
+					id="testimonialSlider"
+					class="flex gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide py-4 cursor-grab active:cursor-grabbing"
+					style="scrollbar-width: none; -ms-overflow-style: none"
 				>
-					Trusted by Families
-				</h2>
-				<div class="grid md:grid-cols-3 gap-8">
-					<div class="bg-background-light p-6 rounded-2xl">
+					<div
+						class="min-w-[320px] md:min-w-[calc(33.333%-22px)] snap-center bg-background-light p-6 rounded-2xl"
+					>
 						<div class="flex gap-1 text-accent mb-4">
 							<span class="material-symbols-outlined text-sm"
 								>star</span
@@ -2141,7 +2181,6 @@
 						<div class="flex items-center gap-3">
 							<div
 								class="size-10 rounded-full bg-gray-300 bg-cover bg-center"
-								data-alt="Portrait of a smiling woman"
 								style="
 									background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeqFbxHbCMSBg0HZD8h0_ZiU6Kb8PMd6eNEGIWMC0K5kN7Qv008fWccKcVDXVV-szcX7LW8OkHwgg3qeus5LgWak6RSxuB_MI-yGzcjdWGPVeolNiqT1h7G2b0MVv13kO7OYZUm37Jm5bl_QPIOUhqUEfBI8scR0A6Tu3KYuOwpA2WGTUDhzDGSJ2C4PloN6i_CQnmplxX8KYDyognNajsDUt-h-3hTpVZDR2Gj8FEezQqiXB80OhbMp9MJPjUeF7_CvFXmFx0qpU');
 								"
@@ -2162,7 +2201,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="bg-background-light p-6 rounded-2xl">
+
+					<div
+						class="min-w-[320px] md:min-w-[calc(33.333%-22px)] snap-center bg-background-light p-6 rounded-2xl"
+					>
 						<div class="flex gap-1 text-accent mb-4">
 							<span class="material-symbols-outlined text-sm"
 								>star</span
@@ -2191,7 +2233,6 @@
 						<div class="flex items-center gap-3">
 							<div
 								class="size-10 rounded-full bg-gray-300 bg-cover bg-center"
-								data-alt="Portrait of a man"
 								style="
 									background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZwqN4pgwYNShCk3ZMhK8LjjfSn1CjdtWXg9f3kL-fV52s6FNG3fm3cAQnt2vXUEWBzVo1FXkTJRQT7uVbwjxElmK_oOTJrLZv70Y2p6UKIseByY3-CU3m7HhnWZutUzRVSRB564GCwsyj4ZnOtlVmOCo8lNtZJV6x0cXrdwyRK6f6eM-aMdBctAVgf_f9HN1llXxjb-G4lauyQbgfZyLdwITyrCl0yhUIsxhVQJUNyW4RNZwRh4Jk6A-fOtp-_EvBE4n5j-J14I4');
 								"
@@ -2212,7 +2253,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="bg-background-light p-6 rounded-2xl">
+
+					<div
+						class="min-w-[320px] md:min-w-[calc(33.333%-22px)] snap-center bg-background-light p-6 rounded-2xl"
+					>
 						<div class="flex gap-1 text-accent mb-4">
 							<span class="material-symbols-outlined text-sm"
 								>star</span
@@ -2241,7 +2285,6 @@
 						<div class="flex items-center gap-3">
 							<div
 								class="size-10 rounded-full bg-gray-300 bg-cover bg-center"
-								data-alt="Portrait of a woman in professional attire"
 								style="
 									background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiUMXlXX0fhtEJ3yW00Wcsj3lsX0wgzw0Ovcfja5c8jUmqTIBSdy_YVPL-HVv0XGNmkx2QCoNI2SVohvxvqGyLJEfmIK9232Zdcd7MqE1njLfYE0FBOQ5Akm-gmf-EnyR9Q5kRv9I52snbZWAySZMD-o7surD56Z78-jxJ1fybBsUGMDFYgbRlcgPTfsBsekEkTMjKWz6MDjHJXKNf3aSO9aauq3Agk-iasw_jZpV680feBR0VvyllvoLhlKaK7QZbVK1d050iq3g');
 								"
@@ -2263,6 +2306,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div
 					class="mt-16 bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-gray-100 relative overflow-hidden"
 				>
@@ -2310,69 +2354,13 @@
 								<div>
 									<p
 										class="text-xs font-bold text-gray-500 uppercase"
-										data-i18n="social-fb"
 									>
 										Facebook
 									</p>
 									<p
-										class="text-lg font-black text-text-dark group-hover:text-[#1877F2] transition-colors"
+										class="text-lg font-black text-text-dark group-hover:text-[#1877F2]"
 									>
 										25k+
-									</p>
-								</div>
-							</a>
-							<a
-								class="flex items-center gap-4 p-4 rounded-2xl bg-[#F0F2F5] hover:bg-[#E4E6EB] transition-colors group min-w-[180px]"
-								href="#"
-							>
-								<div
-									class="size-10 bg-white rounded-full flex items-center justify-center text-[#E1306C] shadow-sm"
-								>
-									<svg
-										class="w-6 h-6 fill-current"
-										viewBox="0 0 24 24"
-									>
-										<path
-											d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-										></path>
-									</svg>
-								</div>
-								<div>
-									<p
-										class="text-xs font-bold text-gray-500 uppercase"
-										data-i18n="social-insta"
-									>
-										Instagram
-									</p>
-									<p
-										class="text-lg font-black text-text-dark group-hover:text-[#E1306C] transition-colors"
-									>
-										15k+
-									</p>
-								</div>
-							</a>
-							<a
-								class="flex items-center gap-4 p-4 rounded-2xl bg-[#F0F2F5] hover:bg-[#E4E6EB] transition-colors group min-w-[180px]"
-								href="#"
-							>
-								<div
-									class="size-10 bg-white rounded-full flex items-center justify-center text-accent shadow-sm"
-								>
-									<span class="material-symbols-outlined"
-										>star</span
-									>
-								</div>
-								<div>
-									<p
-										class="text-xs font-bold text-gray-500 uppercase"
-										data-i18n="social-google"
-									>
-										Google Rating
-									</p>
-									<p
-										class="text-lg font-black text-text-dark group-hover:text-accent transition-colors"
-									>
-										4.8/5
 									</p>
 								</div>
 							</a>

@@ -619,3 +619,81 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 });
+
+const slider = document.getElementById("testimonialSlider");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+
+// Control buttons
+nextBtn.addEventListener("click", () => {
+	slider.scrollBy({ left: 350, behavior: "smooth" });
+});
+
+prevBtn.addEventListener("click", () => {
+	slider.scrollBy({ left: -350, behavior: "smooth" });
+});
+
+// Infinite logic: When reaching the end, scroll back to start (and vice versa)
+slider.addEventListener("scroll", () => {
+	if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 5) {
+		// Infinite loop placeholder: In a real "infinite" you'd clone elements,
+		// but for simple UX, we reset scroll or let user swipe.
+	}
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+	// Easing function: Cubic Out (Fast start, slow end)
+	const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+	const animateNumber = (el) => {
+		const target = parseInt(el.getAttribute("data-target"));
+		const duration = 2500; // 2.5 seconds for a premium slow feel
+		let startTimestamp = null;
+
+		const step = (timestamp) => {
+			if (!startTimestamp) startTimestamp = timestamp;
+			const progress = Math.min(
+				(timestamp - startTimestamp) / duration,
+				1
+			);
+
+			// Apply the easing to the progress
+			const easedProgress = easeOutCubic(progress);
+			const currentCount = Math.floor(easedProgress * target);
+
+			el.innerText = currentCount;
+
+			if (progress < 1) {
+				window.requestAnimationFrame(step);
+			}
+		};
+
+		window.requestAnimationFrame(step);
+	};
+
+	const observerOptions = {
+		threshold: 0.2,
+		rootMargin: "0px 0px -50px 0px", // Triggers slightly before it hits the center
+	};
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				const el = entry.target;
+
+				// 1. Add class for CSS fade-in
+				el.classList.add("is-visible");
+
+				// 2. Start the eased number running
+				animateNumber(el);
+
+				// 3. Unobserve so it only happens once
+				observer.unobserve(el);
+			}
+		});
+	}, observerOptions);
+
+	document.querySelectorAll(".stat-number").forEach((num) => {
+		observer.observe(num);
+	});
+});
