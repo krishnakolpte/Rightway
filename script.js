@@ -1,7 +1,7 @@
 const translations = {
 	en: {
 		/* ===== HEADER / NAV ===== */
-		"header-brand-name": "Rightway Pe",
+		"header-brand-name": "Rightway Gold",
 		"header-brand-tagline": "Gold & Silver Loans Simplified",
 		"nav-download": "Download APK",
 		// hero section
@@ -274,7 +274,7 @@ const translations = {
 	},
 
 	kn: {
-		"header-brand-name": "ರೈಟ್ವೇ ಪೇ",
+		"header-brand-name": "ರೈಟ್‌ವೇ ಗೋಲ್ಡ್",
 		"header-brand-tagline": "ಚಿನ್ನ ಮತ್ತು ಬೆಳ್ಳಿ ಸಾಲಗಳು ಸುಲಭವಾಗಿ",
 		"nav-download": "APK ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
 		// hero section
@@ -550,6 +550,7 @@ const translations = {
 
 function switchLanguage(lang) {
 	document.documentElement.lang = lang;
+	const e = document.querySelector("#kdigits");
 
 	document.querySelectorAll("[data-i18n]").forEach((el) => {
 		const key = el.dataset.i18n;
@@ -559,6 +560,9 @@ function switchLanguage(lang) {
 	});
 
 	localStorage.setItem("lang", lang);
+	// if(lang == "kn"){
+
+	// }
 }
 
 // Handle radio buttons
@@ -576,6 +580,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	switchLanguage(savedLang);
 });
+
+// video player
 
 document.addEventListener("DOMContentLoaded", () => {
 	const videoContainers = document.querySelectorAll(".video-container");
@@ -620,35 +626,77 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
-const slider = document.getElementById("testimonialSlider");
-const nextBtn = document.getElementById("nextBtn");
-const prevBtn = document.getElementById("prevBtn");
-
-// Control buttons
-nextBtn.addEventListener("click", () => {
-	slider.scrollBy({ left: 350, behavior: "smooth" });
-});
-
-prevBtn.addEventListener("click", () => {
-	slider.scrollBy({ left: -350, behavior: "smooth" });
-});
-
-// Infinite logic: When reaching the end, scroll back to start (and vice versa)
-slider.addEventListener("scroll", () => {
-	if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 5) {
-		// Infinite loop placeholder: In a real "infinite" you'd clone elements,
-		// but for simple UX, we reset scroll or let user swipe.
-	}
-});
+// Framer motion animation
 
 document.addEventListener("DOMContentLoaded", () => {
-	// Easing function: Cubic Out (Fast start, slow end)
-	const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+	// We use the Intersection Observer to trigger the Motion animation
+	const observerOptions = {
+		threshold: 0.3,
+		rootMargin: "0px 0px -50px 0px",
+	};
 
-	const animateNumber = (el) => {
-		const target = parseInt(el.getAttribute("data-target"));
-		const duration = 2500; // 2.5 seconds for a premium slow feel
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				const el = entry.target;
+				const targetValue = parseInt(el.getAttribute("data-target"));
+
+				// 1. Framer Motion style Entrance (Fade + Slide)
+				// We use standard CSS transitions for the container/element
+				el.style.opacity = "1";
+				el.style.transform = "translateY(0)";
+
+				// 2. The Digit Running Effect using a Proxy object
+				// This mimics Framer Motion's useTransform/useMotionValue
+				const obj = { count: 0 };
+
+				// Using a simple animation loop for the numbers
+				const duration = 2; // 2 seconds
+				const startTime = performance.now();
+
+				function updateNumber(now) {
+					const elapsed = (now - startTime) / 1000;
+					const progress = Math.min(elapsed / duration, 1);
+
+					// Power3 Ease Out function for that "Framer" feel
+					const easeOut = 1 - Math.pow(1 - progress, 3);
+
+					const currentValue = Math.floor(easeOut * targetValue);
+					el.innerText = currentValue;
+
+					if (progress < 1) {
+						requestAnimationFrame(updateNumber);
+					} else {
+						el.innerText = targetValue + "+";
+					}
+				}
+
+				requestAnimationFrame(updateNumber);
+				observer.unobserve(el);
+			}
+		});
+	}, observerOptions);
+
+	// Initial State: Set opacity and transform for the slide-up effect
+	document.querySelectorAll(".stat-number").forEach((num) => {
+		num.style.opacity = "0";
+		num.style.transform = "translateY(20px)";
+		num.style.transition =
+			"opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1), transform 0.8s cubic-bezier(0.33, 1, 0.68, 1)";
+		observer.observe(num);
+	});
+});
+
+/**
+ * Stats Counter Logic
+ * High-performance animation using requestAnimationFrame
+ */
+const initStatsAnimation = () => {
+	const easeOutQuart = (t) => 1 - Math.pow(1 - t, 4);
+
+	const animateValue = (el, start, end, duration) => {
 		let startTimestamp = null;
+		el.classList.add("is-counting");
 
 		const step = (timestamp) => {
 			if (!startTimestamp) startTimestamp = timestamp;
@@ -656,44 +704,49 @@ document.addEventListener("DOMContentLoaded", () => {
 				(timestamp - startTimestamp) / duration,
 				1
 			);
+			const easedProgress = easeOutQuart(progress);
 
-			// Apply the easing to the progress
-			const easedProgress = easeOutCubic(progress);
-			const currentCount = Math.floor(easedProgress * target);
-
-			el.innerText = currentCount;
+			const current = Math.floor(easedProgress * (end - start) + start);
+			el.innerHTML = current.toLocaleString();
 
 			if (progress < 1) {
 				window.requestAnimationFrame(step);
+			} else {
+				el.innerHTML = end.toLocaleString();
+				el.classList.remove("is-counting");
 			}
 		};
-
 		window.requestAnimationFrame(step);
 	};
 
-	const observerOptions = {
-		threshold: 0.2,
-		rootMargin: "0px 0px -50px 0px", // Triggers slightly before it hits the center
-	};
+	const statsObserver = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const counters =
+						entry.target.querySelectorAll(".stat-number");
 
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				const el = entry.target;
+					// Staggered trigger: each number starts 200ms after the previous one
+					counters.forEach((counter, index) => {
+						setTimeout(() => {
+							counter.classList.add("is-visible");
+							const target = parseInt(
+								counter.getAttribute("data-target")
+							);
+							animateValue(counter, 0, target, 2000);
+						}, index * 200);
+					});
 
-				// 1. Add class for CSS fade-in
-				el.classList.add("is-visible");
+					statsObserver.unobserve(entry.target);
+				}
+			});
+		},
+		{ threshold: 0.3 }
+	);
 
-				// 2. Start the eased number running
-				animateNumber(el);
+	const container = document.querySelector(".stats-container");
+	if (container) statsObserver.observe(container);
+};
 
-				// 3. Unobserve so it only happens once
-				observer.unobserve(el);
-			}
-		});
-	}, observerOptions);
-
-	document.querySelectorAll(".stat-number").forEach((num) => {
-		observer.observe(num);
-	});
-});
+// Initialize on load
+document.addEventListener("DOMContentLoaded", initStatsAnimation);

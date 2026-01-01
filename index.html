@@ -334,7 +334,7 @@
 								"
 							></div>
 							<div
-								class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-gray-100"
+								class="absolute bottom-6 left-6 right-6 bg-white-100 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-gray-100"
 							>
 								<div class="flex items-center gap-4">
 									<div class="flex -space-x-2">
@@ -357,11 +357,31 @@
 											"
 										></div>
 									</div>
+
 									<span
 										class="text-sm font-bold text-text-dark"
-										data-i18n="hero-trust"
-										>Trusted by 1000+ customers</span
+										data-i18n="hero-trust-container"
 									>
+										Trusted by
+										<span
+											class="stat-number"
+											data-target="1000"
+											>0</span
+										>
+										customers
+									</span>
+									<span
+										id="kdigits"
+										class="text-sm font-bold text-text-dark"
+										data-i18n="hero-trust-container"
+									>
+										<span
+											class="stat-number"
+											data-target="1000"
+											>0</span
+										>
+										ಗ್ರಾಹಕರಿಂದ ವಿಶ್ವಾಸಾರ್ಹವಾಗಿದೆ
+									</span>
 								</div>
 							</div>
 						</div>
@@ -371,66 +391,66 @@
 		</section>
 
 		<!-- stats section -->
-		<section class="border-y border-[#e7e8f3] bg-white">
+		<section class="border-y border-[#e7e8f3] bg-white stats-container">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 				<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 					<div
 						class="text-center space-y-2 border-r last:border-0 border-[#e7e8f3] md:border-r-0 lg:border-r"
 					>
-						<p class="text-4xl font-black text-text-dark">2019</p>
+						<p class="text-4xl font-black text-slate-900">2019</p>
 						<p
-							class="text-sm font-medium text-text-light uppercase tracking-wide"
+							class="text-sm font-medium text-slate-500 uppercase tracking-wide"
 							data-i18n="stats-founded"
 						>
 							Founded
 						</p>
 					</div>
+
 					<div
 						class="text-center space-y-2 border-r last:border-0 border-[#e7e8f3] md:border-r-0 lg:border-r"
 					>
-						<p class="text-4xl font-black text-text-dark">
-							<strong class="stat-number" data-target="10"
-								>0</strong
+						<p class="text-4xl font-black text-slate-900">
+							<span class="stat-number" data-target="10">0</span
 							>k+
 						</p>
 						<p
-							class="text-sm font-medium text-text-light uppercase tracking-wide"
+							class="text-sm font-medium text-slate-500 uppercase tracking-wide"
 							data-i18n="stats-customers"
 						>
 							Loyal Customers
 						</p>
 					</div>
+
 					<div
 						class="text-center space-y-2 border-r last:border-0 border-[#e7e8f3] md:border-r-0 lg:border-r transition-all duration-300"
 					>
-						<p class="text-4xl font-black text-text-dark">
-							₹
-							<strong class="stat-number" data-target="1"
-								>0</strong
+						<p class="text-4xl font-black text-slate-900">
+							₹<span class="stat-number" data-target="1">0</span
 							>Cr+
 						</p>
 						<p
-							class="text-sm font-medium text-text-light uppercase tracking-wide"
-							data-i18n="stats-funded"
+							class="text-sm font-medium text-slate-500 uppercase tracking-wide"
+							data-i18n="stats-funded-amt"
 						>
 							Amount Funded
 						</p>
 					</div>
+
 					<div class="text-center space-y-2 relative">
 						<div
-							class="absolute -top-4 right-0 left-0 mx-auto w-max px-2 py-0.5 bg-accent text-white text-[10px] font-bold uppercase tracking-wider rounded-full"
+							class="absolute -top-4 right-0 left-0 mx-auto w-max px-2 py-0.5 bg-orange-500 text-white text-[10px] font-bold uppercase tracking-wider rounded-full"
 							data-i18n="stats-badge-new"
 						>
 							Just Opened
 						</div>
 						<p
-							class="text-4xl font-black text-text-dark"
+							class="text-4xl font-black text-slate-900"
 							data-i18n="stats-location"
 						>
 							Hassan
 						</p>
 						<p
-							class="text-sm font-medium text-text-light uppercase tracking-wide"
+							class="text-sm font-medium text-slate-500 uppercase tracking-wide"
 							data-i18n="stats-branch"
 						>
 							New Branch
@@ -608,7 +628,7 @@
 							class="stat-number text-3xl lg:text-4xl font-black text-primary group-hover:text-white mb-1"
 							data-target="300"
 						>
-							0+
+							0
 						</h3>
 						<p
 							class="text-gray-600 group-hover:text-blue-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
@@ -625,7 +645,7 @@
 							class="stat-number text-3xl lg:text-4xl font-black text-accent group-hover:text-white mb-1"
 							data-target="25"
 						>
-							0+
+							0
 						</h3>
 						<p
 							class="text-gray-600 group-hover:text-orange-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
@@ -642,7 +662,7 @@
 							class="stat-number text-3xl lg:text-4xl font-black text-primary group-hover:text-white mb-1"
 							data-target="20"
 						>
-							0+
+							0
 						</h3>
 						<p
 							class="text-gray-600 group-hover:text-blue-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
@@ -659,7 +679,7 @@
 							class="stat-number text-3xl lg:text-4xl font-black text-accent group-hover:text-white mb-1"
 							data-target="80"
 						>
-							0+
+							0
 						</h3>
 						<p
 							class="text-gray-600 group-hover:text-orange-100 text-xs lg:text-sm font-bold uppercase tracking-widest"
@@ -2305,6 +2325,159 @@
 							</div>
 						</div>
 					</div>
+					<div
+						class="min-w-[320px] md:min-w-[calc(33.333%-22px)] snap-center bg-background-light p-6 rounded-2xl"
+					>
+						<div class="flex gap-1 text-accent mb-4">
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+						</div>
+						<p
+							class="text-text-dark mb-6 italic"
+							data-i18n="testi-3-text"
+						>
+							"Best interest rates in the market. 0.70 paise is
+							unbeatable. Highly recommend for anyone looking for
+							quick cash."
+						</p>
+						<div class="flex items-center gap-3">
+							<div
+								class="size-10 rounded-full bg-gray-300 bg-cover bg-center"
+								style="
+									background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiUMXlXX0fhtEJ3yW00Wcsj3lsX0wgzw0Ovcfja5c8jUmqTIBSdy_YVPL-HVv0XGNmkx2QCoNI2SVohvxvqGyLJEfmIK9232Zdcd7MqE1njLfYE0FBOQ5Akm-gmf-EnyR9Q5kRv9I52snbZWAySZMD-o7surD56Z78-jxJ1fybBsUGMDFYgbRlcgPTfsBsekEkTMjKWz6MDjHJXKNf3aSO9aauq3Agk-iasw_jZpV680feBR0VvyllvoLhlKaK7QZbVK1d050iq3g');
+								"
+							></div>
+							<div>
+								<p
+									class="font-bold text-sm text-text-dark"
+									data-i18n="testi-3-name"
+								>
+									Anjali M.
+								</p>
+								<p
+									class="text-xs text-text-light"
+									data-i18n="testi-3-loc"
+								>
+									Teacher, Bangalore
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="min-w-[320px] md:min-w-[calc(33.333%-22px)] snap-center bg-background-light p-6 rounded-2xl"
+					>
+						<div class="flex gap-1 text-accent mb-4">
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+						</div>
+						<p
+							class="text-text-dark mb-6 italic"
+							data-i18n="testi-3-text"
+						>
+							"Best interest rates in the market. 0.70 paise is
+							unbeatable. Highly recommend for anyone looking for
+							quick cash."
+						</p>
+						<div class="flex items-center gap-3">
+							<div
+								class="size-10 rounded-full bg-gray-300 bg-cover bg-center"
+								style="
+									background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiUMXlXX0fhtEJ3yW00Wcsj3lsX0wgzw0Ovcfja5c8jUmqTIBSdy_YVPL-HVv0XGNmkx2QCoNI2SVohvxvqGyLJEfmIK9232Zdcd7MqE1njLfYE0FBOQ5Akm-gmf-EnyR9Q5kRv9I52snbZWAySZMD-o7surD56Z78-jxJ1fybBsUGMDFYgbRlcgPTfsBsekEkTMjKWz6MDjHJXKNf3aSO9aauq3Agk-iasw_jZpV680feBR0VvyllvoLhlKaK7QZbVK1d050iq3g');
+								"
+							></div>
+							<div>
+								<p
+									class="font-bold text-sm text-text-dark"
+									data-i18n="testi-3-name"
+								>
+									Anjali M.
+								</p>
+								<p
+									class="text-xs text-text-light"
+									data-i18n="testi-3-loc"
+								>
+									Teacher, Bangalore
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="min-w-[320px] md:min-w-[calc(33.333%-22px)] snap-center bg-background-light p-6 rounded-2xl"
+					>
+						<div class="flex gap-1 text-accent mb-4">
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+							<span class="material-symbols-outlined text-sm"
+								>star</span
+							>
+						</div>
+						<p
+							class="text-text-dark mb-6 italic"
+							data-i18n="testi-3-text"
+						>
+							"Best interest rates in the market. 0.70 paise is
+							unbeatable. Highly recommend for anyone looking for
+							quick cash."
+						</p>
+						<div class="flex items-center gap-3">
+							<div
+								class="size-10 rounded-full bg-gray-300 bg-cover bg-center"
+								style="
+									background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiUMXlXX0fhtEJ3yW00Wcsj3lsX0wgzw0Ovcfja5c8jUmqTIBSdy_YVPL-HVv0XGNmkx2QCoNI2SVohvxvqGyLJEfmIK9232Zdcd7MqE1njLfYE0FBOQ5Akm-gmf-EnyR9Q5kRv9I52snbZWAySZMD-o7surD56Z78-jxJ1fybBsUGMDFYgbRlcgPTfsBsekEkTMjKWz6MDjHJXKNf3aSO9aauq3Agk-iasw_jZpV680feBR0VvyllvoLhlKaK7QZbVK1d050iq3g');
+								"
+							></div>
+							<div>
+								<p
+									class="font-bold text-sm text-text-dark"
+									data-i18n="testi-3-name"
+								>
+									Anjali M.
+								</p>
+								<p
+									class="text-xs text-text-light"
+									data-i18n="testi-3-loc"
+								>
+									Teacher, Bangalore
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div
@@ -2512,14 +2685,14 @@
 									>
 										Head Office
 									</h4>
-									<p
+									<!-- <p
 										class="text-text-light mt-1"
 										data-i18n="address-val"
 									>
 										#26 KHATA-344 B GNANA JYOTHI NAGAR<br />
 										Bangalore Vishwavidyalaya, Bangalore<br />
 										Karnataka, India - 560056
-									</p>
+									</p> -->
 								</div>
 							</div>
 
@@ -2539,9 +2712,9 @@
 									>
 										Phone Support
 									</h4>
-									<p class="text-text-light mt-1">
+									<!-- <p class="text-text-light mt-1">
 										+91 99XXXXXXX
-									</p>
+									</p> -->
 									<p
 										class="text-xs text-text-light"
 										data-i18n="phone-hours"
@@ -2567,9 +2740,9 @@
 									>
 										Email
 									</h4>
-									<p class="text-text-light mt-1">
+									<!-- <p class="text-text-light mt-1">
 										support@rightwaype.com
-									</p>
+									</p> -->
 								</div>
 							</div>
 						</div>
@@ -2843,25 +3016,25 @@
 									class="material-symbols-outlined text-lg shrink-0 mt-0.5 text-accent"
 									>location_on</span
 								>
-								<span data-i18n="address-val"
+								<!-- <span data-i18n="address-val"
 									>#26 KHATA-344 B GNANA JYOTHI NAGAR,
 									Bangalore Vishwavidyalaya, Bangalore,
 									Karnataka, India - 560056</span
-								>
+								> -->
 							</li>
 							<li class="flex items-center gap-2">
 								<span
 									class="material-symbols-outlined text-lg shrink-0 text-accent"
 									>call</span
 								>
-								<span>+91 99XXXXXXX</span>
+								<!-- <span>+91 99XXXXXXX</span> -->
 							</li>
 							<li class="flex items-center gap-2">
 								<span
 									class="material-symbols-outlined text-lg shrink-0 text-accent"
 									>mail</span
 								>
-								<span>support@rightwaype.com</span>
+								<!-- <span>support@rightwaype.com</span> -->
 							</li>
 						</ul>
 					</div>
@@ -2929,6 +3102,7 @@
 			</svg>
 		</a>
 
+		<script src="https://cdn.jsdelivr.net/npm/framer-motion@11.11.11/dist/framer-motion.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>

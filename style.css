@@ -22,15 +22,40 @@
     display: none;
 }
 
-/* Mimic Framer Motion initial: opacity 0 and slightly shifted down */
+/* Initial state: Hidden and slightly lower */
 .stat-number {
+    display: inline-block;
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transform: translateY(15px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* State when the element comes into view */
+/* Target state: Visible and at original position */
 .stat-number.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Unique Styles for Digit Running Effect */
+.stat-number {
+    display: inline-block;
+    min-width: 1ch;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stat-number.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Prevent layout jumping by fixing width for large numbers */
+.stat-number[data-target^="1000"] {
+    min-width: 4ch;
+}
+
