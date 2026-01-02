@@ -25,7 +25,7 @@ const translations = {
 		"stats-location": "Hassan",
 		"stats-branch": "New Branch",
 		//
-		"service-1-title": "Online Gold & Silver Loans",
+		"service-1-title": "Gold & Silver Loans",
 		"service-1-desc":
 			"Experience hassle-free processing. Apply instantly for gold and silver loans from anywhere with minimal documentation.",
 		"service-1-btn": "Apply Now",
@@ -33,7 +33,7 @@ const translations = {
 		"service-2-desc":
 			"Enjoy the ultimate convenience. We offer secure pick-up and release services directly at your doorstep.",
 		"service-2-btn": "Book Visit",
-		"service-3-title": "Online Payment Available",
+		"service-3-title": "All Type Of Online Payments Accepted.",
 		"service-3-desc":
 			"Secure and flexible. Pay your interest or principal amount online anytime with our secure gateway.",
 		"service-3-btn": "Pay Online",
@@ -110,7 +110,7 @@ const translations = {
 			"Dedicated support team available during business hours to assist you.",
 
 		"about-badge": "Who We Are",
-		"about-title": "About Rightway Pe Pvt Ltd",
+		"about-title": "About Rightway Gold",
 		"about-intro-1":
 			"We are a new-age fintech company redefining the gold loan landscape in India. Registered on",
 		"about-date": "September 23, 2025",
@@ -147,17 +147,28 @@ const translations = {
 
 		"testi-main-title": "Trusted by Families",
 		"testi-1-text":
-			'"The doorstep service was a lifesaver. The executive was polite, and the money was transferred instantly. Very transparent process."',
+			'"The doorstep service was a lifesaver. The executive was polite, and the money was transferred instantly."',
 		"testi-1-name": "Lakshmi K.",
 		"testi-1-loc": "Business Owner, Hassan",
 		"testi-2-text":
-			'"I was worried about my CIBIL score, but Rightway Pe focused only on my gold. The flexible repayment helped me a lot."',
+			'"I wanted to release my gold from a private bank. Rightway Pe cleared the loan in just 2 hours! Highly efficient."',
 		"testi-2-name": "Ramesh S.",
 		"testi-2-loc": "Farmer, Yediyur",
 		"testi-3-text":
 			'"Best interest rates in the market. 0.70 paise is unbeatable. Highly recommend for anyone looking for quick cash."',
 		"testi-3-name": "Anjali M.",
 		"testi-3-loc": "Teacher, Bangalore",
+		"testi-4-text":
+			'"Sold my old jewelry here. They use modern machines for testing. No deductions, no cheating. Full value received."',
+		"testi-4-name": "Suresh Babu",
+		"testi-4-loc": "Ex-Serviceman, Mandya",
+		"testi-5-text":
+			'"Very professional staff. They make the whole gold selling process easy and stress-free. Best shop in the city."',
+		"testi-5-name": "Priya Mani",
+		"testi-5-loc": "Housewife, Mysore",
+		"community-title": "Join Our Digital Community",
+		"community-desc":
+			"Stay connected with financial tips and gold rate updates.",
 
 		"faq-main-title": "Frequently Asked Questions",
 		"faq-1-q": "What documents are required for a gold loan?",
@@ -298,7 +309,7 @@ const translations = {
 		"stats-location": "ಹಾಸನ",
 		"stats-branch": "ಹೊಸ ಶಾಖೆ",
 
-		"service-1-title": "ಆನ್‌ಲೈನ್ ಚಿನ್ನ ಮತ್ತು ಬೆಳ್ಳಿ ಸಾಲಗಳು",
+		"service-1-title": "ಚಿನ್ನ ಮತ್ತು ಬೆಳ್ಳಿ ಸಾಲಗಳು",
 		"service-1-desc":
 			"ತೊಂದರೆ-ಮುಕ್ತ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಅನುಭವಿಸಿ. ಕನಿಷ್ಠ ದಾಖಲೆಗಳೊಂದಿಗೆ ಎಲ್ಲಿಂದಲಾದರೂ ಚಿನ್ನ ಮತ್ತು ಬೆಳ್ಳಿ ಸಾಲಕ್ಕಾಗಿ ತಕ್ಷಣ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ.",
 		"service-1-btn": "ಈಗಲೇ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ",
@@ -306,7 +317,7 @@ const translations = {
 		"service-2-desc":
 			"ಪರಮ ಅನುಕೂಲವನ್ನು ಆನಂದಿಸಿ. ನಾವು ನಿಮ್ಮ ಮನೆ ಬಾಗಿಲಲ್ಲೇ ಸುರಕ್ಷಿತ ಪಿಕ್-ಅಪ್ ಮತ್ತು ಬಿಡುಗಡೆ ಸೇವೆಗಳನ್ನು ಒದಗಿಸುತ್ತೇವೆ.",
 		"service-2-btn": "ಭೇಟಿ ಕಾಯ್ದಿರಿಸಿ",
-		"service-3-title": "ಆನ್‌ಲೈನ್ ಪಾವತಿ ಲಭ್ಯವಿದೆ",
+		"service-3-title": "ಎಲ್ಲಾ ರೀತಿಯ ಆನ್‌ಲೈನ್ ಪೇಮೆಂಟ್ ಮಾಡಬಹುದು",
 		"service-3-desc":
 			"ಸುರಕ್ಷಿತ ಮತ್ತು ಫ್ಲೆಕ್ಸಿಬಲ್. ನಮ್ಮ ಸುರಕ್ಷಿತ ಗೇಟ್‌ವೇ ಮೂಲಕ ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮ ಬಡ್ಡಿ ಅಥವಾ ಅಸಲು ಮೊತ್ತವನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಪಾವತಿಸಿ.",
 		"service-3-btn": "ಆನ್‌ಲೈನ್ ಪಾವತಿ",
@@ -383,7 +394,7 @@ const translations = {
 			"ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಕೆಲಸದ ಸಮಯದಲ್ಲಿ ಮೀಸಲಾದ ಬೆಂಬಲ ತಂಡ ಲಭ್ಯವಿದೆ.",
 
 		"about-badge": "ನಾವು ಯಾರು",
-		"about-title": "ರೈಟ್ವೇ ಪೇ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್ ಬಗ್ಗೆ",
+		"about-title": "ರೈಟ್ವೇ ಗೋಲ್ಡ್ ಬಗ್ಗೆ",
 		"about-intro-1":
 			"ನಾವು ಭಾರತದಲ್ಲಿ ಚಿನ್ನದ ಸಾಲದ ವ್ಯವಸ್ಥೆಯನ್ನು ಮರು ವ್ಯಾಖ್ಯಾನಿಸುತ್ತಿರುವ ಹೊಸ ಯುಗದ ಫಿನ್‌ಟೆಕ್ ಕಂಪನಿ.",
 		"about-date": "ಸೆಪ್ಟೆಂಬರ್ 23, 2025",
@@ -418,19 +429,30 @@ const translations = {
 		"vision-p":
 			"ಕರ್ನಾಟಕದ ಹೃದಯಭಾಗದಿಂದ ಪ್ರಾರಂಭಿಸಿ, ಭಾರತದ ಪ್ರತಿಯೊಂದು ಮೂಲೆಗೂ ನ್ಯಾಯಯುತ ಚಿನ್ನದ ಸಾಲಗಳನ್ನು ತಲುಪಿಸುವ ಗುರಿಯನ್ನು ನಾವು ಹೊಂದಿದ್ದೇವೆ.",
 
-		"testi-main-title": "ಕುಟುಂಬಗಳ ವಿಶ್ವಾಸ",
+		"testi-main-title": "ಕುಟುಂಬಗಳ ನಂಬಿಕೆ",
 		"testi-1-text":
-			'"ಮನೆಬಾಗಿಲಿಗೆ ಬಂದು ಸೇವೆ ನೀಡುವುದು ತುಂಬಾ ಸಹಕಾರಿಯಾಯಿತು. ಸಿಬ್ಬಂದಿಗಳು ವಿನಯಶೀಲರಾಗಿದ್ದರು ಮತ್ತು ಹಣವು ತಕ್ಷಣವೇ ವರ್ಗಾವಣೆಯಾಯಿತು. ಪ್ರಕ್ರಿಯೆಯು ತುಂಬಾ ಪಾರದರ್ಶಕವಾಗಿದೆ."',
+			'"ಮನೆ ಬಾಗಿಲ ಸೇವೆ ಅದ್ಭುತವಾಗಿದೆ. ಸಿಬ್ಬಂದಿ ಬಹಳ ವಿನಯಶೀಲರಾಗಿದ್ದರು ಮತ್ತು ಹಣವು ತಕ್ಷಣವೇ ವರ್ಗಾವಣೆಯಾಯಿತು."',
 		"testi-1-name": "ಲಕ್ಷ್ಮಿ ಕೆ.",
-		"testi-1-loc": "ಉದ್ಯಮಿ, ಹಾಸನ",
+		"testi-1-loc": "ವ್ಯಾಪಾರಸ್ಥರು, ಹಾಸನ",
 		"testi-2-text":
-			'"ನನ್ನ ಸಿಬಿಲ್ ಸ್ಕೋರ್ ಬಗ್ಗೆ ನನಗೆ ಚಿಂತೆಯಿತ್ತು, ಆದರೆ ರೈಟ್ವೇ ಪೇ ಕೇವಲ ನನ್ನ ಚಿನ್ನದ ಮೇಲೆ ಗಮನ ಹರಿಸಿತು. ಸುಲಭ ಮರುಪಾವತಿ ಆಯ್ಕೆಗಳು ನನಗೆ ತುಂಬಾ ಸಹಾಯ ಮಾಡಿದವು."',
+			'"ನಾನು ಖಾಸಗಿ ಬ್ಯಾಂಕ್‌ನಿಂದ ನನ್ನ ಚಿನ್ನವನ್ನು ಬಿಡಿಸಿಕೊಳ್ಳಬೇಕಿತ್ತು. ರೈಟ್‌ವೇ ಕೇವಲ 2 ಗಂಟೆಗಳಲ್ಲಿ ಸಾಲವನ್ನು ತೀರಿಸಿತು!"',
 		"testi-2-name": "ರಮೇಶ್ ಎಸ್.",
 		"testi-2-loc": "ರೈತರು, ಯಡಿಯೂರು",
 		"testi-3-text":
-			'"ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಅತ್ಯುತ್ತಮ ಬಡ್ಡಿ ದರಗಳು. 0.70 ಪೈಸೆ ಬಡ್ಡಿ ಸಾಟಿಯಿಲ್ಲದ್ದು. ತುರ್ತು ನಗದು ಅಗತ್ಯವಿರುವ ಯಾರಿಗಾದರೂ ನಾನು ಇದನ್ನು ಬಲವಾಗಿ ಶಿಫಾರಸು ಮಾಡುತ್ತೇನೆ."',
+			'"ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಉತ್ತಮ ಬಡ್ಡಿ ದರಗಳು. 0.70 ಪೈಸೆ ಸಾಟಿಯಿಲ್ಲದ್ದು. ತುರ್ತು ಹಣಕ್ಕಾಗಿ ನಾನು ಇದನ್ನು ಶಿಫಾರಸು ಮಾಡುತ್ತೇನೆ."',
 		"testi-3-name": "ಅಂಜಲಿ ಎಂ.",
 		"testi-3-loc": "ಶಿಕ್ಷಕರು, ಬೆಂಗಳೂರು",
+		"testi-4-text":
+			'"ನನ್ನ ಹಳೆಯ ಒಡವೆಗಳನ್ನು ಇಲ್ಲಿ ಮಾರಾಟ ಮಾಡಿದೆ. ಅವರು ಪರೀಕ್ಷೆಗಾಗಿ ಆಧುನಿಕ ಯಂತ್ರಗಳನ್ನು ಬಳಸುತ್ತಾರೆ. ಯಾವುದೇ ಮೋಸವಿಲ್ಲ."',
+		"testi-4-name": "ಸುರೇಶ್ ಬಾಬು",
+		"testi-4-loc": "ಮಾಜಿ ಸೈನಿಕರು, ಮಂಡ್ಯ",
+		"testi-5-text":
+			'"ಬಹಳ ವೃತ್ತಿಪರ ಸಿಬ್ಬಂದಿ. ಅವರು ಚಿನ್ನ ಮಾರಾಟ ಮಾಡುವ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಸುಲಭಗೊಳಿಸುತ್ತಾರೆ. ನಗರದ ಅತ್ಯುತ್ತಮ ಅಂಗಡಿ."',
+		"testi-5-name": "ಪ್ರಿಯಾ ಮಣಿ",
+		"testi-5-loc": "ಗೃಹಿಣಿ, ಮೈಸೂರು",
+		"community-title": "ನಮ್ಮ ಡಿಜಿಟಲ್ ಸಮುದಾಯಕ್ಕೆ ಸೇರಿ",
+		"community-desc":
+			"ಹಣಕಾಸಿನ ಸಲಹೆಗಳು ಮತ್ತು ಚಿನ್ನದ ದರದ ಅಪ್‌ಡೇಟ್‌ಗಳೊಂದಿಗೆ ಸಂಪರ್ಕದಲ್ಲಿರಿ.",
 
 		"faq-main-title": "ಪದೇ ಪದೇ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳು",
 		"faq-1-q": "ಚಿನ್ನದ ಸಾಲಕ್ಕೆ ಯಾವ ದಾಖಲೆಗಳು ಬೇಕಾಗುತ್ತವೆ?",
@@ -550,7 +572,8 @@ const translations = {
 
 function switchLanguage(lang) {
 	document.documentElement.lang = lang;
-	const e = document.querySelector("#kdigits");
+	const ekn = document.querySelector("#kdigits");
+	const een = document.querySelector("#edigits");
 
 	document.querySelectorAll("[data-i18n]").forEach((el) => {
 		const key = el.dataset.i18n;
@@ -560,9 +583,13 @@ function switchLanguage(lang) {
 	});
 
 	localStorage.setItem("lang", lang);
-	// if(lang == "kn"){
-
-	// }
+	if (lang == "kn") {
+		ekn.style.display = "flex";
+		een.style.display = "none";
+	} else {
+		ekn.style.display = "none";
+		een.style.display = "flex";
+	}
 }
 
 // Handle radio buttons
@@ -667,7 +694,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					if (progress < 1) {
 						requestAnimationFrame(updateNumber);
 					} else {
-						el.innerText = targetValue + "+";
+						el.innerText = targetValue;
 					}
 				}
 
@@ -687,66 +714,47 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
-/**
- * Stats Counter Logic
- * High-performance animation using requestAnimationFrame
- */
-const initStatsAnimation = () => {
-	const easeOutQuart = (t) => 1 - Math.pow(1 - t, 4);
+document.addEventListener("DOMContentLoaded", () => {
+	const slider = document.getElementById("testimonialSlider");
+	const nextBtn = document.getElementById("nextBtn");
+	const prevBtn = document.getElementById("prevBtn");
 
-	const animateValue = (el, start, end, duration) => {
-		let startTimestamp = null;
-		el.classList.add("is-counting");
+	let isAutoScrolling = true;
+	const scrollIntervalTime = 4000; // 4 seconds
 
-		const step = (timestamp) => {
-			if (!startTimestamp) startTimestamp = timestamp;
-			const progress = Math.min(
-				(timestamp - startTimestamp) / duration,
-				1
-			);
-			const easedProgress = easeOutQuart(progress);
+	const autoScroll = () => {
+		if (!isAutoScrolling) return;
 
-			const current = Math.floor(easedProgress * (end - start) + start);
-			el.innerHTML = current.toLocaleString();
-
-			if (progress < 1) {
-				window.requestAnimationFrame(step);
-			} else {
-				el.innerHTML = end.toLocaleString();
-				el.classList.remove("is-counting");
-			}
-		};
-		window.requestAnimationFrame(step);
+		const cardWidth = slider.querySelector("div").offsetWidth + 32; // width + gap
+		if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
+			slider.scrollTo({ left: 0, behavior: "smooth" });
+		} else {
+			slider.scrollBy({ left: cardWidth, behavior: "smooth" });
+		}
 	};
 
-	const statsObserver = new IntersectionObserver(
-		(entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					const counters =
-						entry.target.querySelectorAll(".stat-number");
+	let timer = setInterval(autoScroll, scrollIntervalTime);
 
-					// Staggered trigger: each number starts 200ms after the previous one
-					counters.forEach((counter, index) => {
-						setTimeout(() => {
-							counter.classList.add("is-visible");
-							const target = parseInt(
-								counter.getAttribute("data-target")
-							);
-							animateValue(counter, 0, target, 2000);
-						}, index * 200);
-					});
+	// Controls
+	nextBtn.addEventListener("click", () => {
+		clearInterval(timer);
+		const cardWidth = slider.querySelector("div").offsetWidth + 32;
+		slider.scrollBy({ left: cardWidth, behavior: "smooth" });
+		timer = setInterval(autoScroll, scrollIntervalTime);
+	});
 
-					statsObserver.unobserve(entry.target);
-				}
-			});
-		},
-		{ threshold: 0.3 }
-	);
+	prevBtn.addEventListener("click", () => {
+		clearInterval(timer);
+		const cardWidth = slider.querySelector("div").offsetWidth + 32;
+		slider.scrollBy({ left: -cardWidth, behavior: "smooth" });
+		timer = setInterval(autoScroll, scrollIntervalTime);
+	});
 
-	const container = document.querySelector(".stats-container");
-	if (container) statsObserver.observe(container);
-};
-
-// Initialize on load
-document.addEventListener("DOMContentLoaded", initStatsAnimation);
+	// Pause on Interaction
+	slider.addEventListener("mouseenter", () => {
+		isAutoScrolling = false;
+	});
+	slider.addEventListener("mouseleave", () => {
+		isAutoScrolling = true;
+	});
+});

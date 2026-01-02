@@ -59,3 +59,28 @@
     min-width: 4ch;
 }
 
+/* Custom slider styles */
+#testimonialSlider {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+#testimonialSlider::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+}
+
+/* Pause animation on hover for user experience */
+#testimonialSlider:hover {
+    animation-play-state: paused;
+}
+
+/* Ensure images fit well */
+.size-10 {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+}
