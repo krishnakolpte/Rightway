@@ -43,13 +43,13 @@ const translations = {
 		"mission-1-desc":
 			"Built on the pillars of transparency and integrity. We value your emotions attached to gold, not just its weight.",
 		"mission-1-btn": "Discover Our Values",
-		"mission-badge-consumer": "Indian Consumer First",
-		"mission-2-title": "Financial Freedom for Every Household",
-		"mission-2-desc":
-			"Our mission is to empower the common man with instant access to capital, respecting the Indian tradition of savings in gold.",
-		"mission-2-btn": "Join Our Mission",
+		"purity-badge": "Certified Purity Standards",
+		"purity-title": "Unmatched Value for Gold & Silver",
+		"purity-desc":
+			"Experience transparency with our advanced XRF testing. Get the highest market value for your precious metals with zero hidden deductions.",
+		"purity-btn": "Check Live Rates",
 
-		"choose-title": "Why Choose Rightway Pe?",
+		"choose-title": "Why Choose Rightway Gold?",
 		"choose-subtitle":
 			"We offer features that others don't, tailored for your peace of mind.",
 		"choose-1-title": "Gold & Silver Coins Accepted",
@@ -327,13 +327,13 @@ const translations = {
 		"mission-1-desc":
 			"ಪಾರದರ್ಶಕತೆ ಮತ್ತು ಸಮಗ್ರತೆಯ ಅಡಿಪಾಯದ ಮೇಲೆ ನಿರ್ಮಿಸಲಾಗಿದೆ. ನಾವು ನಿಮ್ಮ ಚಿನ್ನದ ತೂಕಕ್ಕಿಂತ ಹೆಚ್ಚಾಗಿ ಅದರೊಂದಿಗಿನ ನಿಮ್ಮ ಭಾವನೆಗಳನ್ನು ಗೌರವಿಸುತ್ತೇವೆ.",
 		"mission-1-btn": "ನಮ್ಮ ಮೌಲ್ಯಗಳನ್ನು ತಿಳಿಯಿರಿ",
-		"mission-badge-consumer": "ಭಾರತೀಯ ಗ್ರಾಹಕರಿಗೆ ಮೊದಲ ಆದ್ಯತೆ",
-		"mission-2-title": "ಪ್ರತಿ ಮನೆಗೂ ಆರ್ಥಿಕ ಸ್ವಾತಂತ್ರ್ಯ",
-		"mission-2-desc":
-			"ಸಾಮಾನ್ಯ ಮನುಷ್ಯನಿಗೆ ಬಂಡವಾಳದ ತ್ವರಿತ ಲಭ್ಯತೆಯೊಂದಿಗೆ ಸಬಲೀಕರಣ ಮಾಡುವುದು ಮತ್ತು ಚಿನ್ನದ ಉಳಿತಾಯದ ಭಾರತೀಯ ಸಂಪ್ರದಾಯವನ್ನು ಗೌರವಿಸುವುದು ನಮ್ಮ ಗುರಿ.",
-		"mission-2-btn": "ನಮ್ಮ ಮಿಷನ್ ಸೇರಿ",
+		"purity-badge": "ಪ್ರಮಾಣೀಕೃತ ಶುದ್ಧತೆಯ ಮಾನದಂಡಗಳು",
+		"purity-title": "ಚಿನ್ನ ಮತ್ತು ಬೆಳ್ಳಿಗೆ ಸಾಟಿಯಿಲ್ಲದ ಮೌಲ್ಯ",
+		"purity-desc":
+			"ನಮ್ಮ ಸುಧಾರಿತ ಎಕ್ಸ್‌ಆರ್‌ಎಫ್ ಪರೀಕ್ಷೆಯೊಂದಿಗೆ ಪಾರದರ್ಶಕತೆಯನ್ನು ಅನುಭವಿಸಿ. ಯಾವುದೇ ಗುಪ್ತ ಕಡಿತಗಳಿಲ್ಲದೆ ನಿಮ್ಮ ಅಮೂಲ್ಯ ಲೋಹಗಳಿಗೆ ಹೆಚ್ಚಿನ ಮಾರುಕಟ್ಟೆ ಮೌಲ್ಯವನ್ನು ಪಡೆಯಿರಿ.",
+		"purity-btn": "ಲೈವ್ ದರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ",
 
-		"choose-title": "ರೈಟ್ವೇ ಪೇ ಅನ್ನು ಏಕೆ ಆರಿಸಬೇಕು?",
+		"choose-title": "ರೈಟ್ವೇ ಗೋಲ್ಡ್ ಅನ್ನು ಏಕೆ ಆರಿಸಬೇಕು?",
 		"choose-subtitle":
 			"ನಿಮ್ಮ ಮನದ ಶಾಂತಿಗಾಗಿ ಇತರರು ನೀಡದ ವಿಶಿಷ್ಟ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ನಾವು ನೀಡುತ್ತೇವೆ.",
 		"choose-1-title": "ಚಿನ್ನ ಮತ್ತು ಬೆಳ್ಳಿ ನಾಣ್ಯಗಳನ್ನು ಸ್ವೀಕರಿಸಲಾಗುತ್ತದೆ",
