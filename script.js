@@ -653,67 +653,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
-// Framer motion animation
-
-document.addEventListener("DOMContentLoaded", () => {
-	// We use the Intersection Observer to trigger the Motion animation
-	const observerOptions = {
-		threshold: 0.3,
-		rootMargin: "0px 0px -50px 0px",
-	};
-
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				const el = entry.target;
-				const targetValue = parseInt(el.getAttribute("data-target"));
-
-				// 1. Framer Motion style Entrance (Fade + Slide)
-				// We use standard CSS transitions for the container/element
-				el.style.opacity = "1";
-				el.style.transform = "translateY(0)";
-
-				// 2. The Digit Running Effect using a Proxy object
-				// This mimics Framer Motion's useTransform/useMotionValue
-				const obj = { count: 0 };
-
-				// Using a simple animation loop for the numbers
-				const duration = 2; // 2 seconds
-				const startTime = performance.now();
-
-				function updateNumber(now) {
-					const elapsed = (now - startTime) / 1000;
-					const progress = Math.min(elapsed / duration, 1);
-
-					// Power3 Ease Out function for that "Framer" feel
-					const easeOut = 1 - Math.pow(1 - progress, 3);
-
-					const currentValue = Math.floor(easeOut * targetValue);
-					el.innerText = currentValue;
-
-					if (progress < 1) {
-						requestAnimationFrame(updateNumber);
-					} else {
-						el.innerText = targetValue;
-					}
-				}
-
-				requestAnimationFrame(updateNumber);
-				observer.unobserve(el);
-			}
-		});
-	}, observerOptions);
-
-	// Initial State: Set opacity and transform for the slide-up effect
-	document.querySelectorAll(".stat-number").forEach((num) => {
-		num.style.opacity = "0";
-		num.style.transform = "translateY(20px)";
-		num.style.transition =
-			"opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1), transform 0.8s cubic-bezier(0.33, 1, 0.68, 1)";
-		observer.observe(num);
-	});
-});
-
 document.addEventListener("DOMContentLoaded", () => {
 	const slider = document.getElementById("testimonialSlider");
 	const nextBtn = document.getElementById("nextBtn");
